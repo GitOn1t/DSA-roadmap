@@ -20,3 +20,25 @@ class Solution {
         
     }
 }
+
+
+# Add Two Numbers (Linked List)
+
+Given two linked lists where digits are stored in **reverse order** (head = ones place), add the two numbers and return the sum as a linked list.
+
+## Approach (Simple)
+1. Read digits safely:
+   `x = (l1 != null ? l1.val : 0)`  
+   `y = (l2 != null ? l2.val : 0)`
+2. `sum = x + y + carry`
+3. `digit = sum % 10`
+4. `carry = sum / 10`
+5. Move pointers if not null
+6. Loop until: `l1 != null || l2 != null || carry != 0`
+
+## Complexity
+- **Time:** O(max(m, n))
+- **Space:** O(1) auxiliary
+
+## Example
+`[2,4,3] + [5,6,4] = [7,0,8]`  (807)
