@@ -1,3 +1,24 @@
+Intersection of Two Linked Lists — Brief Note
+
+Idea:
+Two pointers walk through both lists.
+When a pointer reaches the end of its list, it moves to the head of the other list.
+This makes both pointers travel the same total distance.
+
+If lists share a common tail → both pointers will eventually stand on the same node → intersection.
+If they don’t share → both pointers become null at the same time → no intersection.
+
+Intersection is based on:
+✔ Same node (same memory)
+✘ Not “same value”
+Time Complexity:
+👉 O(m + n)
+Because each pointer scans list A + list B once.
+Space Complexity:
+👉 O(1)
+Only two pointers used.
+
+
 
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -12,3 +33,6 @@ public class Solution {
         
     }
 }
+
+
+
