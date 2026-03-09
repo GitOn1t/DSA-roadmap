@@ -1,3 +1,22 @@
+Detect Cycle Entry in Linked List — Floyd’s Algorithm (Tortoise & Hare)
+
+Goal: Return the node where the cycle begins; otherwise return null.
+Approach:
+
+Phase 1 (Detect): Move slow by 1 and fast by 2. If they meet, a cycle exists.
+Phase 2 (Find Entry): Reset slow to head, then move both one step each; the node where they meet is the cycle’s entry.
+
+
+Complexity:
+
+Time: O(n)
+Space: O(1)
+
+
+Edge Cases: head == null, single node without cycle → return null.
+Pitfall to avoid: In Phase 2, ensure both pointers move one step (not two).
+
+
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         if(head==null || head.next==null) return null;
