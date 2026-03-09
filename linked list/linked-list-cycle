@@ -1,3 +1,34 @@
+Detect Cycle in Singly Linked List — Floyd’s Tortoise & Hare
+
+Goal: Determine if a linked list contains a cycle.
+Approach: Two pointers
+
+slow moves 1 step; fast moves 2 steps.
+If they ever meet → cycle exists. If fast hits null → no cycle.
+
+
+Why it works: In a cyclic loop, the faster pointer eventually “laps” the slower one, guaranteeing a meeting point.
+Complexity:
+
+Time: O(n)
+Space: O(1)
+
+
+Edge Cases:
+
+Empty list (head == null) → false
+Single node without cycle → false
+Single node pointing to itself → true
+
+
+Pitfalls to avoid:
+
+Always check fast != null && fast.next != null before advancing fast = fast.next.next.
+
+
+
+
+
 
 public class Solution {
     public boolean hasCycle(ListNode head) {
