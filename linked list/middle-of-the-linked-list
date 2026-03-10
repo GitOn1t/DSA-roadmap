@@ -1,3 +1,17 @@
+iddle of the Linked List — Floyd’s Slow & Fast Pointer Technique
+This solution finds the middle node of a singly linked list.
+Two pointers are used:
+
+slow → moves 1 step at a time
+fast → moves 2 steps at a time
+
+When fast reaches the end, slow will be at the middle.
+For even-length lists, this returns the second middle node, as required by LeetCode.
+Complexity
+
+Time Complexity: O(n) — each node is visited at most once.
+Space Complexity: O(1) — uses only two pointers.
+
 
 class Solution {
     public ListNode middleNode(ListNode head) {
