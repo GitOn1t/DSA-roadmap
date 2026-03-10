@@ -1,3 +1,29 @@
+Palindrome Linked List — Fast/Slow Pointer + Reverse Second Half
+This algorithm checks if a singly linked list is a palindrome in linear time and constant space.
+Approach
+
+Find the middle using slow & fast pointers.
+
+slow → moves 1 step
+fast → moves 2 steps
+When the loop ends, slow is at the midpoint.
+
+
+Reverse the second half of the list starting from slow.
+Compare the first half and the reversed second half node‑by‑node.
+If all values match → it’s a palindrome.
+
+Why this works
+
+Even-length lists split evenly.
+Odd-length lists have a middle node, but reversing from slow automatically handles it (middle node doesn't affect symmetry).
+Stopping when second becomes null ensures only necessary comparisons are made.
+
+Complexities
+
+Time Complexity: O(n) — each node is visited at most twice.
+Space Complexity: O(1) — in-place reversal, no additional data structures.
+
 
 class Solution {
     public boolean isPalindrome(ListNode head) {
