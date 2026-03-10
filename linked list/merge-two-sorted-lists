@@ -1,3 +1,19 @@
+Merge Two Sorted Linked Lists — Iterative Approach
+This solution merges two sorted linked lists into a single sorted list.
+A dummy node is used to simplify pointer handling, and a tail pointer builds the result list.
+At each step, the smaller of the two current nodes (l1 or l2) is appended to the merged list.
+When one list ends, the remainder of the other list is attached.
+Complexity
+
+Time Complexity: O(n + m) — each node from both lists is processed exactly once.
+Space Complexity: O(1) — merging is done in-place using existing nodes (no extra list created).
+
+Notes
+
+Uses a dummy head to avoid edge‑case checks.
+Maintains sorted order because both input lists are already sorted.
+Iterative method is clean, efficient, and optimal.
+
 
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
