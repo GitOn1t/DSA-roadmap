@@ -1,7 +1,17 @@
+Brief note (LeetCode 83 – Remove Duplicates from Sorted List)
+
+Works because the list is sorted: equal values appear contiguously, so you can skip duplicates by relinking curr.next = curr.next.next when curr.val == curr.next.val.
+In-place, single pass. Preserves the first occurrence of each value.
+
+Complexities
+
+Time: O(n) — each node visited at most once.
+Space: O(1) — constant extra space.
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if(head==null){
+        if(head==null || head.next==null){
             return head;
         }
         ListNode current = head;
