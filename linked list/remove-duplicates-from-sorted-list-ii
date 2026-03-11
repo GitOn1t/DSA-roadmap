@@ -1,3 +1,20 @@
+Brief (LeetCode 82 – Remove Duplicates from Sorted List II)
+
+Uses a dummy node so we can safely delete from the head when the first group is duplicate.
+Two pointers:
+
+curr scans the list.
+prev lags behind and always points to the last confirmed unique node (the tail of the result so far).
+
+
+If curr.val == curr.next.val, we consume the entire duplicate block with the inner loop, then link prev.next to the first node after that block (curr.next), effectively removing all nodes with that value.
+If values differ, the current node is unique, so advance both prev and curr.
+
+Complexities
+
+Time: O(n) — each node is visited at most once; duplicates are skipped in blocks.
+Space: O(1) — in-place pointer manipulation.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
