@@ -1,3 +1,25 @@
+Use a dummy node before head and two pointers (fast, slow).
+
+Move fast ahead by n + 1 steps so the gap between fast and slow is n.
+Move both until fast hits null.
+Now slow is just before the node to remove → do slow.next = slow.next.next.
+Return dummy.next (handles head removal cleanly).
+
+Why dummy node?
+
+It simplifies edge cases like removing the first node (when n == length).
+Avoids extra conditionals for head manipulation.
+
+Correctness intuition
+
+Keeping a fixed gap of n ensures when fast reaches the end, slow is positioned just before the target node from the end.
+
+Time & Space Complexity
+
+Time: O(L) where L is the length of the list (single pass).
+Space: O(1) (constant extra space).
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
