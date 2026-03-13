@@ -1,3 +1,21 @@
+Brief Explanation
+
+You use a dummy node (dummy.next = head) to simplify deletions, especially when the head node(s) need to be removed.
+A pointer curr starts at dummy.
+While curr.next exists:
+
+If curr.next.val == val, you skip that node by linking curr.next to curr.next.next.
+Otherwise, you advance curr to the next node.
+
+
+Finally, you return dummy.next as the (possibly new) head.
+
+This approach avoids special-casing deletions at the head and cleanly handles consecutive nodes matching val.
+Time & Space Complexity
+
+Time Complexity: O(n) — each node is visited at most once.
+Space Complexity: O(1) — uses constant extra space (only a few pointers and the dummy node).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
