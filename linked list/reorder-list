@@ -1,3 +1,22 @@
+What this code does
+Reorders a linked list from
+L0 → L1 → L2 → … → Ln
+to
+L0 → Ln → L1 → Ln-1 → … in-place.
+
+How it works (3 steps)
+
+Find middle using slow/fast pointers (endOfFirstList)
+Reverse second half of the list (reverse)
+Merge alternately from first half and reversed second half (merge)
+
+
+Complexity
+
+Time: O(n)
+Space: O(1) (in-place, no extra data structures)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
 
 class Solution {
     public void reorderList(ListNode head) {
