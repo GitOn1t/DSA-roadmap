@@ -1,4 +1,42 @@
+ROTATE LIST
 
+This code rotates a linked list to the right by k positions.
+How it works (in short):
+
+Find the length n and the tail of the list.
+Connect tail to head → make the list circular.
+Reduce rotations using k = k % n.
+Move n - k - 1 steps to find the new tail.
+The node after new tail becomes new head.
+Break the circle and return the new head.
+
+Complexities
+
+Time Complexity: O(n)
+(one pass to find length + one pass to find new tail)
+Space Complexity: O(1)
+(in-place, no extra data structures)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Walkthrough with example
+Input: head = [1, 2, 3, 4, 5], k = 2
+
+Length n = 5, tail = 5
+Make circular: 5.next = 1 → 1 → 2 → 3 → 4 → 5 → (back to 1)
+k = k % n = 2 % 5 = 2
+stepsToNewTail = n - k - 1 = 5 - 2 - 1 = 2
+
+Start at head = 1, move 2 steps:
+
+step 1 → 2
+step 2 → 3
+→ newTail = 3
+
+newHead = newTail.next = 4
+Break circle: newTail.next = null
+
+Result: 4 → 5 → 1 → 2 → 3
+----------------------------------------------------------------------------------------------------------------------------------------------------
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         if(head== null|| head.next == null || k==0) return head;
