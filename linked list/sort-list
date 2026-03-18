@@ -1,3 +1,20 @@
+SORT LIST
+
+Base case: return head if 0/1 node.
+Split: middleOfTheList uses slow/fast; prev.next = null cuts into:
+
+Left: starts at head
+Right: starts at returned slow (mid)
+
+
+Recurse: left = sortList(head), right = sortList(mid)
+Merge: merge(a, b) builds a sorted list by picking the smaller head each time (stable).
+
+Complexities
+
+Time: O(n log n)
+Space: O(log n) (recursion stack; merge uses O(1) extra).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class Solution {
     public ListNode sortList(ListNode head) {
