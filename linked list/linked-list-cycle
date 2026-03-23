@@ -24,10 +24,7 @@ Single node pointing to itself → true
 Pitfalls to avoid:
 
 Always check fast != null && fast.next != null before advancing fast = fast.next.next.
-
-
-
-
+---------------------------------------------------------------------------------------------------------------------
 
 
 public class Solution {
