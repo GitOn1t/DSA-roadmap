@@ -17,8 +17,7 @@ Because each pointer scans list A + list B once.
 Space Complexity:
 👉 O(1)
 Only two pointers used.
-
-
+-----------------------------------------------------------------------------
 
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
