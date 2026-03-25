@@ -13,8 +13,7 @@ Notes
 Uses a dummy head to avoid edge‑case checks.
 Maintains sorted order because both input lists are already sorted.
 Iterative method is clean, efficient, and optimal.
-
-
+----------------------------------------------------------------------------------------------
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
