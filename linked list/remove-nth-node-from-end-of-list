@@ -20,9 +20,8 @@ Time: O(L) where L is the length of the list (single pass).
 Space: O(1) (constant extra space).
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 class Solution {
-    public ListNode removeNthFromEnd(ListNode head, int n) {
+  public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy=new ListNode(0,head);
         ListNode fast=dummy;
         ListNode slow=dummy;
