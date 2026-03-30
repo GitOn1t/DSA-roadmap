@@ -21,7 +21,7 @@ Complexity
 
 Time Complexity: O(n) (each node visited once)
 Space Complexity: O(1) (in-place, no extra memory)
---------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 class Solution {
     public ListNode reverseList(ListNode head) {
