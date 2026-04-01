@@ -1,3 +1,16 @@
+Brief Explanation:
+This approach moves all non‑zero elements to the front of the array while maintaining their relative order. It keeps a pointer (pos) to track where the next non‑zero number should be placed. After processing all elements, the remaining positions are filled with zeros.
+Time Complexity:
+
+O(n) — The array is traversed once.
+
+Space Complexity:
+
+O(1) — The operation is done in place without extra space.
+
+Provide your feedback on BizChat
+-------------------------------------------------------------------
+
 class Solution {
     public void moveZeroes(int[] nums) {
         int pos=0;
