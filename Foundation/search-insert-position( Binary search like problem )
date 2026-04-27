@@ -1,3 +1,21 @@
+Brief Note:
+Given a sorted array and a target value, the task is to:
+
+Return the index of the target if it exists.
+If it does not exist, return the index where it should be inserted so the array remains sorted.
+
+This problem is efficiently solved using Binary Search by repeatedly narrowing the search range.
+When the target is not found, the algorithm ends with the pointer l positioned at the correct insertion index, which is why returning l works.
+
+Time Complexity:
+O(log n)
+→ The search space is halved in every iteration.
+
+Space Complexity:
+O(1)
+→ Only constant extra variables (l, h, mid) are used.
+-----------------------------------------------------------------------------
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int l=0;
