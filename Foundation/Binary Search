@@ -1,3 +1,16 @@
+Key points:
+
+Works only on sorted data
+Eliminates half of the remaining elements in each step
+Much faster than linear search for large inputs
+
+Complexities:
+
+Time Complexity: O(log n) (best case O(1))
+Space Complexity: O(1) (iterative version)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int search(int[] nums, int target) {
         int l=0;
