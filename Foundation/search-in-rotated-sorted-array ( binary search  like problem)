@@ -1,3 +1,12 @@
+
+This code uses a modified binary search to find a target in a rotated sorted array.
+In each iteration, it checks which half of the array is sorted, determines whether the target lies in that half using boundary comparisons (nums[start], nums[end]), and discards the other half.
+Complexities:
+
+Time Complexity: O(log n) — halves the search space each step
+Space Complexity: O(1) — uses constant extra space
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int search(int[] nums, int target) {
 
