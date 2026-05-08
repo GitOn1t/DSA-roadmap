@@ -1,3 +1,12 @@
+Brief explanation:
+This code finds the integer square root of a non‑negative number x using binary search.
+It searches between 1 and x/2, compares mid * mid with x, and narrows the range until the largest integer whose square is ≤ x is found. Using long prevents overflow during multiplication.
+Complexities:
+
+Time Complexity: O(log x) — binary search halves the range each step
+Space Complexity: O(1) — uses constant extra space
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int mySqrt(int x) {
         if(x<2) return x;
