@@ -1,3 +1,25 @@
+Valid Parentheses — Short Brief
+The Valid Parentheses problem checks whether a string of brackets ()[]{}
+is properly balanced and correctly ordered.
+
+Use a stack to store opening brackets.
+Push opening brackets onto the stack.
+When a closing bracket appears:
+
+If the stack is empty → invalid.
+Pop the last opening bracket and check if it matches.
+
+
+At the end, the stack must be empty for the string to be valid.
+
+
+⏱️ Complexities
+
+Time Complexity: O(n) — each character is processed once
+Space Complexity: O(n) — stack may store all opening brackets
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
