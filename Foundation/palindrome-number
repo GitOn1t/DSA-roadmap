@@ -1,13 +1,32 @@
+Short Brief
+This method checks if a number is a palindrome by reversing it and comparing it with the original number. If both match, it returns true; otherwise, it returns false. Negative numbers are immediately rejected since they cannot be palindromes.
+
+Complexities
+
+
+Time Complexity: O(d)
+(where d is the number of digits in the number)
+
+
+Space Complexity: O(1)
+(uses only a few variables, no extra space)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public boolean isPalindrome(int x) {
-        if(x<0|| (x%10==0 && x!=0)) return false;
-        int reversedHalf=0;
-        while(x>reversedHalf){
-            int lastDigit=x%10;
-            reversedHalf=reversedHalf*10+lastDigit;
-            x=x/10;
+        int reverse=0;
+        int xcopy=x;
+
+        if(x<0){
+            return false;
         }
-        return x==reversedHalf || x==reversedHalf/10;
-        
+
+        while(x>0){
+            reverse=(reverse*10)+(x%10);
+            x/=10;
+
+        }
+        return reverse==xcopy;
     }
 }
