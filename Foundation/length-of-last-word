@@ -1,3 +1,23 @@
+ Short Brief 
+👉 The code finds the length of the last word in a string by:
+
+Removing extra spaces using trim()
+Traversing the string from the end
+Counting characters until a space is found
+Returning the count
+
+
+✅ Key Idea
+👉 Move backwards and count characters of the last word.
+
+✅ Complexity
+
+Time Complexity: O(n) → single pass through string
+Space Complexity: O(1) → no extra space used
+
+
+-----------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int lengthOfLastWord(String s) {
         s=s.trim();
