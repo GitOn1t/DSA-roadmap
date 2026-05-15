@@ -1,3 +1,23 @@
+
+Short Brief
+👉 The code finds the first index where needle appears in haystack by checking every possible starting position and comparing characters one by one. If a full match is found, it returns the index; otherwise, it returns -1.
+
+✅ Key Idea
+👉 Compare the small string (needle) at every position in the big string (haystack).
+
+✅ Complexities
+
+
+Time Complexity: O(n × m)
+👉 In the worst case, compare m characters for each of the n positions
+
+
+Space Complexity: O(1)
+👉 No extra space used
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int strStr(String haystack, String needle) {
         int n= haystack.length();
