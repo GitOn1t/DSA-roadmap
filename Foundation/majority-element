@@ -1,3 +1,27 @@
+Brief Explanation
+This solution finds the majority element (the element that appears more than ⌊n/2⌋ times) by:
+
+Sorting the array using Arrays.sort(nums)
+Returning the element at index n/2
+
+💡 Why it works:
+If an element appears more than half the time, it will always occupy the middle position after sorting.
+
+⏱️ Time Complexity
+
+Sorting takes O(n log n)
+Accessing the middle element takes O(1)
+
+✅ Overall: O(n log n)
+
+💾 Space Complexity
+
+Depends on the sorting algorithm used internally by Java
+Typically O(log n) (for recursive stack in quicksort/dual-pivot sort)
+
+✅ Overall: O(log n) (in-place sort, no extra data structures)
+-------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int majorityElement(int[] nums) {
         Arrays.sort(nums);
