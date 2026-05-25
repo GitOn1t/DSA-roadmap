@@ -1,3 +1,29 @@
+✅ Add Digits – Point-wise Note
+
+The problem is about repeatedly adding digits until a single digit is obtained.
+Instead of using loops, we use a mathematical trick (Digital Root).
+The result follows a modulo 9 pattern.
+
+
+✅ Formula
+
+If num == 0 → return 0
+If num % 9 == 0 → return 9
+Else → return num % 9
+
+
+✅ Key Idea
+
+Sum of digits of a number is equivalent to num % 9
+Exception: when remainder is 0, answer should be 9 (not 0)
+
+
+✅ Complexity
+
+Time: O(1)
+Space: O(1)
+-----------------------------------------------------------------------------------------------------------
+
 public int addDigits(int num) {
         if(num==0){
             return 0;
