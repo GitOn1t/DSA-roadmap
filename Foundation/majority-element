@@ -20,7 +20,7 @@ Depends on the sorting algorithm used internally by Java
 Typically O(log n) (for recursive stack in quicksort/dual-pivot sort)
 
 ✅ Overall: O(log n) (in-place sort, no extra data structures)
--------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class Solution {
     public int majorityElement(int[] nums) {
