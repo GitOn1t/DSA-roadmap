@@ -1,3 +1,13 @@
+Uses a HashMap to store numbers and their indices.
+For each element, computes needed = target - current.
+If needed is already in the map → return indices.
+Else, store current number in the map.
+
+Complexity
+Time: O(n) (single pass)
+Space: O(n) (HashMap storage)
+--------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
        Map<Integer,Integer> map=new HashMap<>();
@@ -13,3 +23,5 @@ class Solution {
        return new int[]{};
     }
 }
+
+
