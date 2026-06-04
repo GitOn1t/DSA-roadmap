@@ -10,13 +10,13 @@ The result follows a modulo 9 pattern.
 If num == 0 → return 0
 If num % 9 == 0 → return 9
 Else → return num % 9
-
+---------------------------------------------------------------------------------------------------------
 
 ✅ Key Idea
 
 Sum of digits of a number is equivalent to num % 9
 Exception: when remainder is 0, answer should be 9 (not 0)
-
+----------------------------------------------------------------------------------------------------------
 
 ✅ Complexity
 
