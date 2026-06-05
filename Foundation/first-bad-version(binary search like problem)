@@ -1,6 +1,12 @@
-/* The isBadVersion API is defined in the parent class VersionControl.
-      boolean isBadVersion(int version); */
+Uses Binary Search to find the first bad version
+If mid is bad → search left side (right = mid)
+Else → search right side (left = mid + 1)
+Stops when left == right → first bad version found
 
+Complexity
+Time: O(log n)
+Space: O(1)
+-------------------------------------------------------------------------------------------------------------
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
         int left=1;
