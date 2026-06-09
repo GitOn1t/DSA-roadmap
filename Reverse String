@@ -1,3 +1,8 @@
+Summary:
+This method reverses a given character array in-place using the two-pointer approach. One pointer starts at the beginning (i) and the other at the end (j). Characters at these positions are swapped, and the pointers move toward the center until they meet.
+Time Complexity: O(n) – each element is visited once.
+Space Complexity: O(1) – no extra space is used (in-place).
+------------------------------------------------------------------------------------------
 class Solution {
     public void reverseString(char[] s) {
         int i=0;
