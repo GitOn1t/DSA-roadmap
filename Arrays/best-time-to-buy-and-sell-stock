@@ -1,3 +1,22 @@
+This code solves the Best Time to Buy and Sell Stock (single transaction) problem.
+
+It iterates through the prices array once.
+Keeps track of the minimum price seen so far (minPrice).
+For each price:
+
+If it's lower than minPrice, update minPrice (best day to buy).
+Otherwise, calculate profit (price - minPrice) and update maxProfit if it's higher.
+
+In short:
+Buy at the lowest price so far and sell at the current price if it gives better profit.
+
+Complexity Analysis
+Time Complexity: O(n)
+→ Only one pass through the array.
+
+Space Complexity: O(1)
+→ Uses only a few variables (no extra data structures).
+---------------------------------------------------------------------------------------------------------------------------------------
 class Solution {
     public int maxProfit(int[] prices) {
        int minPrice=Integer.MAX_VALUE;
