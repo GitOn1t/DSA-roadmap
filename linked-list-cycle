@@ -1,4 +1,21 @@
+Brief Explanation
 
+Two pointers are used:
+
+slow moves 1 step at a time
+fast moves 2 steps at a time
+
+
+If there is a cycle, fast will eventually meet slow → return true
+If fast reaches null, the list has no cycle → return false
+
+Complexity
+
+Time Complexity: O(n)
+(Each node is visited at most once)
+Space Complexity: O(1)
+(No extra space used, only pointers)
+--------------------------------------------------------------------------------------------------------------
 public class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode fast=head;
