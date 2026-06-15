@@ -1,3 +1,23 @@
+This method removes all occurrences of a given value (val) from the array in-place and returns the new length of the array after removal.
+
+It uses a pointer pos to track the position where the next valid (non-val) element should be placed.
+It loops through the array:
+
+If the current element is not equal to val, it copies it to pos and increments pos.
+
+
+After the loop, the first pos elements of the array contain all valid elements.
+
+
+Time Complexity:
+
+O(n) → You traverse the array once.
+
+Space Complexity:
+
+O(1) → No extra space is used 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 class Solution {
     public int removeElement(int[] nums, int val) {
        int pos=0;
