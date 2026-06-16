@@ -3,8 +3,7 @@
 The problem is about repeatedly adding digits until a single digit is obtained.
 Instead of using loops, we use a mathematical trick (Digital Root).
 The result follows a modulo 9 pattern.
-
-
+------------------------------------------------------------------------------
 ✅ Formula
 
 If num == 0 → return 0
