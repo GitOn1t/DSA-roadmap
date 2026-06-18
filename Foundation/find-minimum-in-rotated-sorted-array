@@ -1,3 +1,13 @@
+Uses binary search to find the minimum in a rotated sorted array.
+Compares nums[mid] with nums[right] to decide which half contains the minimum.
+
+If nums[mid] < nums[right] → search left half
+Else → search right half
+
+Stops when left == right, which is the minimum.
+Time Complexity: O(log n)
+Space Complexity: O(1)
+-------------------------------------------------------------------------------------------------
 class Solution {
     public int findMin(int[] nums) {
         int left=0, right=nums.length-1;
