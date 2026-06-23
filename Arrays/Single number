@@ -3,8 +3,7 @@ This method uses XOR to find the number that appears only once:
 Duplicate numbers cancel out (a ^ a = 0)
 Remaining value is the unique number
 
-
-⏱️ Complexities
+Complexities
 
 Time: O(n)
 Space: O(1)
