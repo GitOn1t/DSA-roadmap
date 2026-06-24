@@ -1,4 +1,11 @@
 # Write your MySQL query statement below
+
+This query finds customers who visited but did not make any transaction.
+It left joins visits with transactions
+Filters rows where no matching transaction exists
+Groups by customer_id
+Counts how many such visits each customer had
+----------------------------------------------------------------------
 SELECT customer_id,
 COUNT(*) AS count_no_trans
 FROM visits v
