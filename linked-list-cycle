@@ -13,8 +13,8 @@ Complexity
 
 Time Complexity: O(n)
 (Each node is visited at most once)
-Space Complexity: O(1)
-(No extra space used, only pointers)
+Space Complexity is O(1)
+
 --------------------------------------------------------------------------------------------------------------
 public class Solution {
     public boolean hasCycle(ListNode head) {
