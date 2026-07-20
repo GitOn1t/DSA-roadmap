@@ -1,4 +1,4 @@
-Key points to be noted:
+Key points to be noted for solving the code:
 
 Works only on sorted data
 Eliminates half of the remaining elements in each step
